@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".lapor_minum_obat">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:padding="15dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Timer"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+        <FrameLayout
+            android:id="@+id/konten"
+            android:background="@drawable/bg_rounded"
+            android:padding="15dp"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Sudah minum obat ?"
+                android:textAllCaps="true"
+                android:textColor="@color/colorFont"
+                android:textSize="20sp"
+                android:textStyle="bold"></TextView>
+
+            <LinearLayout
+                android:layout_gravity="right"
+               android:layout_marginTop="35dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/no"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|fill"
+                    android:background="@drawable/no"
+                    android:drawableLeft="@drawable/ic_judul"
+                    android:drawablePadding="5dp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:drawableTint="@color/colorAccent"
+                    android:text="Belum"
+                    android:textColor="@color/colorFont" />
+
+                <Button
+                    android:id="@+id/yes"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|fill"
+                    android:background="@drawable/yes"
+                    android:drawableLeft="@drawable/ic_tambah"
+                    android:drawablePadding="5dp"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:drawableTint="@color/colorAccent"
+                    android:text="sudah"
+                    android:textColor="@color/colorFont" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</RelativeLayout>

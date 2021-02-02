@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.suwardi.icheck">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".opsi_data_jadwal"></activity>
+        <activity android:name=".laporan_next2" />
+        <activity android:name=".laporan_next" />
+        <activity android:name=".list_lapor" />
+        <activity android:name=".list_jadwal2" />
+        <activity android:name=".daftar_pasien_obat" />
+        <activity android:name=".list_jadwal" />
+        <activity android:name=".laporannya" />
+        <activity android:name=".pw_dokter" />
+        <activity android:name=".MenuDokter" />
+        <activity android:name=".ThirdActivity" />
+        <activity android:name=".notif_checkup" />
+        <activity android:name=".tu_list_jadwal_obat" />
+        <activity android:name=".tu_list_jadwal_checkup" />
+        <activity android:name=".lapor_minum_obat" />
+        <activity android:name=".gen_laporan" />
+        <activity android:name=".jadwalnya" />
+        <activity android:name=".list_data_minum_obat" />
+        <activity android:name=".list_data_jadwal" />
+        <activity android:name=".upload_jadwal_checkup" />
+        <activity android:name=".daftar_dokter" />
+        <activity android:name=".daftar_pasien_checkup" />
+        <activity android:name=".profil_pasien" />
+        <activity android:name=".upload_data_pasien" />
+        <activity android:name=".list_data_pasien" />
+        <activity android:name=".pw_admin" />
+        <activity android:name=".list_data_dokter" />
+        <activity android:name=".upload_data_dokter" />
+        <activity android:name=".SecondActivity" />
+        <activity android:name=".MenuAdmin" />
+        <activity android:name=".opsi" />
+        <activity android:name=".MenuUtama" />
+        <activity android:name=".reg" />
+        <activity android:name=".forgot" />
+        <activity android:name=".cek_email" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".Notifikasi" />
+    </application>
+
+</manifest>

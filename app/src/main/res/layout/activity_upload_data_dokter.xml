@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".upload_data_dokter">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:padding="15dp"
+            app:srcCompat="@drawable/logo" />
+
+        <LinearLayout
+            android:id="@+id/loadingnya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/proggessBar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/text_proggessBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0.0%"
+                android:textSize="25sp"></TextView>
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/data"
+            android:background="@drawable/bg_rounded"
+            android:padding="15dp"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pilih Foto : "
+                        android:textSize="20sp"
+                        android:textColor="@color/colorFont"/>
+
+                    <ImageView
+                        android:id="@+id/up_photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/img" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="NIP"
+                        app:hintTextAppearance="@color/colorFont"
+                        android:textColorHint="@color/colorFont">
+                        <EditText
+                            android:id="@+id/nip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/pencil"
+                            android:drawablePadding="5dp"
+                            android:drawableTint="@color/colorFont"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:textColorHint="@color/colorFont" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        app:hintTextAppearance="@color/colorFont"
+                        android:textColorHint="@color/colorFont">
+                        <EditText
+                            android:id="@+id/pw"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/pencil"
+                            android:drawablePadding="5dp"
+                            android:drawableTint="@color/colorFont"
+                            android:ems="10"
+                            android:inputType="textPassword"
+                            android:textColorHint="@color/colorFont" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nama"
+                        app:hintTextAppearance="@color/colorFont"
+                        android:textColorHint="@color/colorFont">
+                        <EditText
+                            android:id="@+id/nama"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/pencil"
+                            android:drawablePadding="5dp"
+                            android:drawableTint="@color/colorFont"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:textColorHint="@color/colorFont" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Spesialis"
+                        app:hintTextAppearance="@color/colorFont"
+                        android:textColorHint="@color/colorFont">
+                        <EditText
+                            android:id="@+id/spesialis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/pencil"
+                            android:drawablePadding="5dp"
+                            android:drawableTint="@color/colorFont"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:textColorHint="@color/colorFont" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nomer HP"
+                        app:hintTextAppearance="@color/colorFont"
+                        android:textColorHint="@color/colorFont">
+                        <EditText
+                            android:id="@+id/nope"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/pencil"
+                            android:drawablePadding="5dp"
+                            android:drawableTint="@color/colorFont"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:textColorHint="@color/colorFont" />
+                    </com.google.android.material.textfield.TextInputLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Alamat Praktek"
+                        app:hintTextAppearance="@color/colorFont"
+                        android:textColorHint="@color/colorFont">
+                        <EditText
+                            android:id="@+id/alamat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/pencil"
+                            android:drawablePadding="5dp"
+                            android:drawableTint="@color/colorFont"
+                            android:ems="10"
+                            android:inputType="text"
+                            android:textColorHint="@color/colorFont" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <Button
+                        android:id="@+id/upload_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@drawable/bg_konten"
+                        android:drawableLeft="@drawable/reg"
+                        android:drawablePadding="5dp"
+                        android:drawableTint="@color/colorFont"
+                        android:padding="15dp"
+                        android:layout_marginRight="15dp"
+                        android:text="Simpan"
+                        android:textColor="@color/colorFont" />
+
+                </LinearLayout>
+            </ScrollView>
+
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

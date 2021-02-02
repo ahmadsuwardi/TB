@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MenuDokter">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:padding="10dp"
+            app:srcCompat="@drawable/logo" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/bg_konten"
+            android:drawableLeft="@drawable/out"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/colorFont"
+            android:padding="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Keluar Akun"
+            android:textColor="@color/colorFont" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_rounded">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/laporan_obat"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="end|fill"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/bg_konten"
+                                android:drawableTop="@drawable/report"
+                                android:drawablePadding="5dp"
+                                android:drawableTint="@color/colorFont"
+                                android:padding="15dp"
+                                android:text="Jadwal Minum Obat"
+                                android:textColor="@color/colorFont" />
+                            <Button
+                                android:id="@+id/laporan"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="end|fill"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/bg_konten"
+                                android:drawableTop="@drawable/report"
+                                android:drawablePadding="5dp"
+                                android:drawableTint="@color/colorFont"
+                                android:padding="15dp"
+                                android:text="Jadwal Checkup"
+                                android:textColor="@color/colorFont" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/kirim"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="end|fill"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/bg_konten"
+                                android:drawableTop="@drawable/ic_mess"
+                                android:drawablePadding="5dp"
+                                android:drawableTint="@color/colorFont"
+                                android:padding="15dp"
+                                android:text="Laporan &amp; Kirim Pesan"
+                                android:textColor="@color/colorFont" />
+
+                            <Button
+                                android:id="@+id/chng_pw"
+                                android:layout_width="150dp"
+                                android:layout_height="150dp"
+                                android:layout_gravity="end|fill"
+                                android:layout_margin="5dp"
+                                android:background="@drawable/bg_konten"
+                                android:drawableTop="@drawable/admin"
+                                android:drawablePadding="5dp"
+                                android:drawableTint="@color/colorFont"
+                                android:padding="15dp"
+                                android:text="Ganti Password"
+                                android:textColor="@color/colorFont" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

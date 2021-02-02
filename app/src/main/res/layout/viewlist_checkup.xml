@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_konten"
+    android:layout_margin="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/konten"
+            android:background="@drawable/bg_rounded"
+            android:padding="15dp"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="Judul"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorFont"
+                    android:textSize="20sp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:background="@drawable/bg_rounded"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/nip"
+                        android:visibility="invisible"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:gravity="left"
+                        android:textColor="@color/colorFont"
+                        android:textSize="18sp"></TextView>
+                    <TextView
+                        android:id="@+id/nik"
+                        android:visibility="invisible"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:gravity="left"
+                        android:textColor="@color/colorFont"
+                        android:textSize="18sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/waktu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Jadwalnya"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorFont"
+                        android:textSize="20sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

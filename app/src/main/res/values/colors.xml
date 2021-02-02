@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5077DF</color>
+    <color name="colorPrimaryDark">#697fa3</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorFont">#000</color>
+
+    <!--color untuk gradient tansition-->
+    <color name="deep_purple_500">#673ab7</color>
+    <color name="indigo_500">#3f51b5</color>
+    <color name="blue_500">#2196f3</color>
+</resources>
